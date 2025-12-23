@@ -38,9 +38,7 @@ export const PhoneFrame: FC<PropsWithChildren<PhoneFrameProps>> = ({
         {/* Screen area */}
         {showContent && (
           <div className={styles.screenArea}>
-            <div className={styles.screenContent}>
-              {children || 'Screen Content'}
-            </div>
+            <div className={styles.screenContent}>{children}</div>
           </div>
         )}
       </div>

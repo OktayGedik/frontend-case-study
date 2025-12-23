@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["vite/client"],
+    "types": ["vite/client", "node"],
     "allowJs": false,
     "strict": true,
     "useDefineForClassFields": true,
@@ -19,7 +19,13 @@
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@/shared/*": ["src/shared/*"],
+      "@/components/*": ["src/components/*"]
+    }
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "references": [

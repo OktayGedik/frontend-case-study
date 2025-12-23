@@ -6,7 +6,8 @@
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "emitDeclarationOnly": true,
-    "outDir": "./"
+    "outDir": "./",
+    "types": ["node"]
   },
   "include": ["vite.config.ts"]
 }

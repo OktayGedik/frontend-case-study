@@ -8,3 +8,10 @@
 
   background-color: var(--color-bg-layout);
 }
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--color-bg-container);
+}

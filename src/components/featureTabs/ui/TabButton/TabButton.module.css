@@ -1,26 +1,3 @@
-.tabsContainer {
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-
-  overflow-x: auto;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  width: 100%;
-  margin-inline: auto;
-
-  background: var(--color-bg-tabs);
-  border-block: var(--border-1) solid var(--color-border-subtle);
-
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: none;
-}
-
-.tabsContainer::-webkit-scrollbar {
-  display: none;
-}
-
 .tabButton {
   cursor: pointer;
 
@@ -32,7 +9,7 @@
   align-items: center;
   justify-content: center;
 
-  padding: var(--space-6) var(--space-6);
+  padding: var(--space-3) var(--space-6);
 
   color: var(--color-icon-muted);
   white-space: nowrap;
