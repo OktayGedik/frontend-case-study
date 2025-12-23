@@ -29,9 +29,7 @@
     },
     {
       "files": ["vite.config.ts"],
-      "extends": [
-        "plugin:@typescript-eslint/recommended"
-      ],
+      "extends": ["plugin:@typescript-eslint/recommended"],
       "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
