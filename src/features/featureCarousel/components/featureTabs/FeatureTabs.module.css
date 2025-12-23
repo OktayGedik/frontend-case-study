@@ -38,7 +38,7 @@
   white-space: nowrap;
 
   background: transparent;
-  border: var(--border-2) solid transparent;
+  border: var(--border-3) solid transparent;
 
   transition:
     background-color 200ms ease,
@@ -119,7 +119,7 @@
 }
 
 .withDivider {
-  border-right: var(--border-2) solid var(--color-border-subtle);
+  border-right: var(--border-3) solid var(--color-border-subtle);
 }
 
 .tabLabel {
