@@ -1,3 +1,76 @@
+:root {
+    /* Font family */
+    --font-sans: -apple-system, blinkmacsystemfont, 'SF Pro Display', 'Segoe UI',
+    'Helvetica Neue', sans-serif;
+
+    /* Font weights */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-heavy: 800;
+
+    /* Font sizes (rem) */
+    --fs-16: 1rem; /* 16px */
+    --fs-20: 1.25rem; /* 20px */
+    --fs-32: 2rem; /* 32px */
+
+    /* Line heights */
+    --lh-1: 1;
+    --lh-28: 1.75rem; /* 28px */
+    --lh-32: 2rem; /* 32px */
+    --lh-40: 2.5rem; /* 40px */
+
+    /* Letter spacing (rem) */
+    --ls-2: 0.125rem; /* 2px */
+    --ls-08: 0.05rem; /* 0.8px */
+
+    /* Spacing (rem) */
+    --space-1: 0.25rem; /* 4px */
+    --space-2: 0.5rem; /* 8px */
+    --space-3: 0.75rem; /* 12px */
+    --space-4: 1rem; /* 16px */
+    --space-5: 1.5rem; /* 24px */
+    --space-6: 2rem; /* 32px */
+    --space-7: 3rem; /* 48px */
+    --space-8: 4rem; /* 64px */
+
+    /* Colors */
+    --color-accent: #0381ff; /* rgba(3,129,255,1) */
+    --color-text-strong: #0b122a; /* rgba(11,18,42,1) */
+    --color-text-body: #0b172a; /* rgba(11,23,42,1) */
+    --color-surface-main: #fbfcfc; /* rgba(251,252,252,1) */
+    --color-surface-tabs: #fff; /* rgba(255,255,255,1) */
+    --color-icon-muted: #666; /* rgba(102,102,102,1) */
+    --color-bg-layout: #f5f5f7;
+    --color-bg-carousel: #fbfcfc;
+    --color-bg-tabs: #fff;
+
+    /* Colors (alpha → RGBA) */
+    --color-border-subtle: rgb(0 0 0 / 8%);
+    --color-accent-soft: rgb(3 129 255 / 3%); /* active tab bg */
+
+    /* Component sizing */
+    --tabs-icon-wrap: 3.5rem; /* 42px */
+    --tabs-icon-size: 2rem; /* 22px */
+
+    /* Borders */
+    --border-1: 1px;
+    --border-2: 2px;
+
+    /* Radius */
+    --radius-sm: 0.5rem; /* 8px */
+    --radius-md: 0.75rem; /* 12px */
+    --radius-pill: 999px;
+    --focus-ring: 0 0 0 0.1875rem rgb(3 129 255 / 18%);
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI',
+    'Helvetica Neue', sans-serif;
+}
+
 body {
-  display: block;
+    display: block;
+    margin: 0;
+    padding: 0;
 }

@@ -1,0 +1,132 @@
+.tabsContainer {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+  margin-inline: auto;
+
+  background: var(--color-bg-tabs);
+  border-block: var(--border-1) solid var(--color-border-subtle);
+
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+}
+
+.tabsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.tabButton {
+  cursor: pointer;
+
+  position: relative;
+
+  display: flex;
+  flex: 1;
+  gap: var(--space-3);
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--space-6) var(--space-6);
+
+  color: var(--color-icon-muted);
+  white-space: nowrap;
+
+  background: transparent;
+  border: var(--border-2) solid transparent;
+
+  transition:
+    background-color 200ms ease,
+    color 200ms ease,
+    border-color 200ms ease;
+}
+
+.tabButton:not(.active):hover {
+  border-color: var(--color-accent);
+}
+
+.tabButton.active {
+  color: var(--color-accent);
+  background-color: var(--color-accent-soft);
+}
+
+.tabIcon {
+  position: relative;
+
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+
+  width: var(--tabs-icon-wrap);
+  height: var(--tabs-icon-wrap);
+
+  color: inherit;
+}
+
+.tabIcon svg {
+  position: absolute;
+  inset: -2px;
+}
+
+.tabIcon > * > svg,
+.tabIcon > svg:last-child {
+  position: relative;
+  z-index: 1;
+  inset: auto;
+
+  display: block;
+
+  width: var(--tabs-icon-size);
+  height: var(--tabs-icon-size);
+}
+
+.tabButton.active .tabIcon {
+  color: var(--color-accent);
+}
+
+.borderCircle {
+  pointer-events: none;
+
+  position: absolute;
+  z-index: 0;
+  inset: -2px;
+  transform: rotate(-90deg);
+
+  fill: none;
+  stroke: var(--color-border-subtle);
+}
+
+.tabButton.active .borderCircle {
+  stroke: var(--color-accent);
+  stroke-dasharray: 87.96;
+  stroke-dashoffset: 87.96;
+  animation: border-fill 0.4s ease-in-out forwards;
+}
+
+@keyframes border-fill {
+  0% {
+    stroke-dashoffset: -87.96;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.withDivider {
+  border-right: var(--border-2) solid var(--color-border-subtle);
+}
+
+.tabLabel {
+  font-size: var(--fs-20);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-28);
+  color: inherit;
+  text-align: center;
+  letter-spacing: 0;
+}
