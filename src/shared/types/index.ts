@@ -1,1 +1,2 @@
-export type { Tab } from './tab';
+export type { Tab, TabContent } from './tab';
+export { TabId } from './tab';

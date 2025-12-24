@@ -1,15 +1,21 @@
 import type { Tab } from '../types';
+import { TabId } from '../types';
 import DocumentScannerIcon from '../assets/icons/featureTabs/document-scanner.svg?react';
 import SignStampIcon from '../assets/icons/featureTabs/sign-stamp.svg?react';
 import BatchScanningIcon from '../assets/icons/featureTabs/batch-scanning.svg?react';
 import AdvancedFiltersIcon from '../assets/icons/featureTabs/advanced-filters.svg?react';
 import ExportShareIcon from '../assets/icons/featureTabs/export-share.svg?react';
-
+import DocumentScannerBaseImage from '../assets/images/documentScanner/document-scanner-base.png';
+import BatchScanningImage from '../assets/images/batchScanning/batch-scanning-base.png';
+import AdvancedFiltersImage from '../assets/images/advancedFilters/advanced-filters-base.png';
+import ExportShareImage from '../assets/images/exportShare/export-share-base.png';
+import SignStampBaseImage from '../assets/images/signStamp/sign-stamp-base.png';
 export const FEATURE_TABS = [
   {
-    id: 'document-scanner' as const,
-    label: 'Document Scanner' as const,
+    id: TabId.DocumentScanner,
+    label: 'Document Scanner',
     icon: DocumentScannerIcon,
+    screenContentBaseImage: DocumentScannerBaseImage,
     content: {
       title: 'Document Scanner',
       subTitle: 'Scan with Ease',
@@ -19,9 +25,10 @@ export const FEATURE_TABS = [
     },
   },
   {
-    id: 'sign-stamp' as const,
-    label: 'Sign & Stamp' as const,
+    id: TabId.SignStamp,
+    label: 'Sign & Stamp',
     icon: SignStampIcon,
+    screenContentBaseImage: SignStampBaseImage,
     content: {
       title: 'Sign & Stamp',
       subTitle: 'One-Tap Focus',
@@ -31,9 +38,10 @@ export const FEATURE_TABS = [
     },
   },
   {
-    id: 'batch-scanning' as const,
-    label: 'Batch Scanning' as const,
+    id: TabId.BatchScanning,
+    label: 'Batch Scanning',
     icon: BatchScanningIcon,
+    screenContentBaseImage: BatchScanningImage,
     content: {
       title: 'Batch Scanning',
       subTitle: 'Multiple Page Scan',
@@ -43,9 +51,10 @@ export const FEATURE_TABS = [
     },
   },
   {
-    id: 'advanced-filters' as const,
-    label: 'Advanced Filters' as const,
+    id: TabId.AdvancedFilters,
+    label: 'Advanced Filters',
     icon: AdvancedFiltersIcon,
+    screenContentBaseImage: AdvancedFiltersImage,
     content: {
       title: 'Advanced Filters',
       subTitle: 'Unique Filters',
@@ -55,9 +64,10 @@ export const FEATURE_TABS = [
     },
   },
   {
-    id: 'export-share' as const,
-    label: 'Export & Share' as const,
+    id: TabId.ExportShare,
+    label: 'Export & Share',
     icon: ExportShareIcon,
+    screenContentBaseImage: ExportShareImage,
     content: {
       title: 'Export & Share',
       subTitle: 'All-Round Conversion',

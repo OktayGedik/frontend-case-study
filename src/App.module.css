@@ -20,15 +20,16 @@
   background-color: var(--color-bg-container);
 }
 
-.wrapper {
+.frameAndHeroContentWrapper {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
 }
 
 @media (width >= 1024px) {
-  .wrapper {
+  .frameAndHeroContentWrapper {
     flex-direction: row-reverse;
+    padding-top: var(--space-9);
     padding-inline: var(--space-8);
   }
 
