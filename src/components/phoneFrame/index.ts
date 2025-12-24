@@ -5,5 +5,6 @@ export {
   BatchScanningScreenAnimationContent,
   SignStampScreenAnimationContent,
   AdvancedFilterScreenAnimationContent,
+  ExportScreenAnimationContent,
 } from './components';
 export type { PhoneScreenContentProps } from './components';

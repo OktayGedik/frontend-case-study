@@ -8,6 +8,7 @@ import {
   PhoneFrame,
   PhoneScreenContent,
   AdvancedFilterScreenAnimationContent,
+  ExportScreenAnimationContent,
 } from '@/components';
 import styles from '@/App.module.css';
 import { HERO_CONTENT_ANIMATION_DURATION } from '@/shared';
@@ -30,7 +31,7 @@ const PHONE_CONTENT_COMPONENTS = {
   [TabId.SignStamp]: SignStampScreenAnimationContent,
   [TabId.BatchScanning]: BatchScanningScreenAnimationContent,
   [TabId.AdvancedFilters]: AdvancedFilterScreenAnimationContent,
-  [TabId.ExportShare]: null,
+  [TabId.ExportShare]: ExportScreenAnimationContent,
 } as const;
 
 export const PhoneFrameSection: FC<PhoneFrameSectionProps> = ({

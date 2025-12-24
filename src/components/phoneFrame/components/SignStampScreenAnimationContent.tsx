@@ -12,7 +12,8 @@ export const SignStampScreenAnimationContent = () => {
           position: 'absolute',
           top: 205,
           zIndex: 3,
-          left: '-120px',
+          left: '-13%',
+          width: '60%',
         }}
         initial={{ y: '100%', scale: 0 }}
         animate={{ y: 0, scale: 1 }}
@@ -30,7 +31,8 @@ export const SignStampScreenAnimationContent = () => {
           position: 'absolute',
           top: 95,
           zIndex: 3,
-          right: '-35%',
+          right: '-13%',
+          width: '60%',
         }}
         initial={{ y: '100%', scale: 0 }}
         animate={{ y: 0, scale: 1 }}

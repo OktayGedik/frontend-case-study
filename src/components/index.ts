@@ -5,6 +5,7 @@ export {
   BatchScanningScreenAnimationContent,
   SignStampScreenAnimationContent,
   AdvancedFilterScreenAnimationContent,
+  ExportScreenAnimationContent,
 } from './phoneFrame';
 export { FeatureHeroContent } from './featureHeroContent';
 export { PhoneFrameSection } from './PhoneFrameSection';

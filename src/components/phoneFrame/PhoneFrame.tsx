@@ -36,11 +36,7 @@ export const PhoneFrame: FC<PropsWithChildren<PhoneFrameProps>> = ({
         <EarpieceSpeakerSvg className={styles.earpieceSpeaker} />
 
         {/* Screen area */}
-        {showContent && (
-          <div className={styles.screenArea}>
-            {children}
-          </div>
-        )}
+        {showContent && <div className={styles.screenArea}>{children}</div>}
       </div>
     </div>
   );
