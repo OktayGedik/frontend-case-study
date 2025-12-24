@@ -1,7 +1,7 @@
 .main {
   display: flex;
+  align-items: center;
   justify-content: center;
-    align-items: center;
 
   width: 100vw;
   min-height: 100vh;
@@ -10,6 +10,7 @@
 }
 
 .contentContainer {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 
@@ -25,8 +26,6 @@
   gap: var(--space-4);
 }
 
-
-
 @media (width >= 1024px) {
   .wrapper {
     flex-direction: row-reverse;
@@ -38,5 +37,11 @@
     flex: 1;
     align-items: center;
     justify-content: center;
+  }
+
+  .heroContentWrapper {
+    display: flex;
+    flex: 1;
+    align-items: center;
   }
 }

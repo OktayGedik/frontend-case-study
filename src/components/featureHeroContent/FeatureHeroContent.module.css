@@ -28,7 +28,7 @@
 }
 
 .description {
-  min-height: 96px;
+  min-height: 86px;
   margin: 0;
 
   font-size: var(--fs-14);
