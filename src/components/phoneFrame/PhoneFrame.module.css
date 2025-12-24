@@ -71,14 +71,14 @@
 .camera {
   position: absolute;
   z-index: 20;
-  top: 23px;
+  top: 14px;
   right: 33%;
 }
 
 .earpieceSpeaker {
   position: absolute;
   z-index: 20;
-  top: 25px;
+  top: 16px;
   left: 50%;
   transform: translateX(-50%);
 }

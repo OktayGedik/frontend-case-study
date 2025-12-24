@@ -11,6 +11,7 @@
   --fw-heavy: 800;
 
   /* Font sizes (rem) */
+  --fs-14: 0.875rem; /* 14px */
   --fs-16: 1rem; /* 16px */
   --fs-20: 1.25rem; /* 20px */
   --fs-32: 2rem; /* 32px */
@@ -35,7 +36,15 @@
   --space-7: 3rem; /* 48px */
   --space-8: 4rem; /* 64px */
 
+  /* Breakpoints (px) */
+  --bp-mobile: 320px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
+  --bp-wide: 1440px;
+
   /* Colors */
+  --white: #fff; /* rgba(255,255,255,1) */
+  --black: #000; /* rgba(0,0,0,1) */
   --color-accent: #0381ff; /* rgba(3,129,255,1) */
   --color-text-strong: #0b122a; /* rgba(11,18,42,1) */
   --color-text-body: #0b172a; /* rgba(11,23,42,1) */
@@ -55,6 +64,7 @@
   --tabs-icon-size: 2rem; /* 22px */
 
   /* Borders */
+  --border-05: 0.5px;
   --border-1: 1px;
   --border-2: 2px;
   --border-3: 3px;

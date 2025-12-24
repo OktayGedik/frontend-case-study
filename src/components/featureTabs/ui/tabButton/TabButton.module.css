@@ -28,7 +28,7 @@
 }
 
 .tabButton.active {
-  color: var(--color-accent);
+  color: var(--color-text-body);
   background-color: var(--color-accent-soft);
 }
 
@@ -103,7 +103,7 @@
   font-size: var(--fs-20);
   font-weight: var(--fw-medium);
   line-height: var(--lh-28);
-  color: inherit;
+  color: var(--black);
   text-align: center;
   letter-spacing: 0;
 }

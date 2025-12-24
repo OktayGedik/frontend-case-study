@@ -1,2 +1,3 @@
-export { FeatureTabs } from './FeatureTabs';
+export { FeatureTabs } from './featureTabs';
 export { PhoneFrame } from './phoneFrame';
+export { FeatureHeroContent } from './featureHeroContent';

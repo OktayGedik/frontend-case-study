@@ -1,7 +1,7 @@
 .main {
   display: flex;
-  align-items: center;
   justify-content: center;
+    align-items: center;
 
   width: 100vw;
   min-height: 100vh;
@@ -12,6 +12,31 @@
 .contentContainer {
   display: flex;
   flex-direction: column;
+
   width: 100%;
+  padding-top: var(--space-4);
+
   background-color: var(--color-bg-container);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+
+
+@media (width >= 1024px) {
+  .wrapper {
+    flex-direction: row-reverse;
+    padding-inline: var(--space-8);
+  }
+
+  .phoneFrameWrapper {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
 }
