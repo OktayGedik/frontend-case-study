@@ -217,7 +217,6 @@ All dependencies are specified in the `package.json` file. The project is design
 4. **Reusable Components**: Reusable component architecture
 5. **Constants Management**: Centralized management of constant values
 
-
 ## 📝 Notes
 
 - The project has been implemented in full accordance with the Figma design
