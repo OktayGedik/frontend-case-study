@@ -12,7 +12,7 @@ export const AdvancedFilterScreenAnimationContent: FC = () => {
         alt="Signature"
         style={{
           position: 'absolute',
-          top: '22%',
+          top: '20%',
           zIndex: 3,
           left: '-11%',
           height: '78%',
@@ -31,7 +31,7 @@ export const AdvancedFilterScreenAnimationContent: FC = () => {
         alt="Stamp"
         style={{
           position: 'absolute',
-          top: '22%',
+          top: '20%',
           zIndex: 3,
           right: '-10%',
           height: '78%',

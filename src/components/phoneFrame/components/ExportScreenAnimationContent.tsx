@@ -12,7 +12,7 @@ const EXPORT_ITEMS = [
     alt: 'Right Arrow',
     width: 'clamp(16px, 5vw, 20px)',
     height: 'auto',
-    finalBottom: '0%',
+    finalBottom: '2%',
     finalLeft: '-13%',
     delay: PHONE_CONTENT_ANIMATION_DELAY,
   },
