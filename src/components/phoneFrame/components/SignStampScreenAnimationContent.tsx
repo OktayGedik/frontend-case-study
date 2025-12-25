@@ -1,8 +1,9 @@
+import { FC } from 'react';
 import { motion } from 'framer-motion';
 import SignImage from '@/shared/assets/images/signStamp/sign.png';
 import StampImage from '@/shared/assets/images/signStamp/stamp.png';
 import { PHONE_CONTENT_ANIMATION_DELAY } from '@/shared';
-export const SignStampScreenAnimationContent = () => {
+export const SignStampScreenAnimationContent: FC = () => {
   return (
     <>
       <motion.img
@@ -12,7 +13,7 @@ export const SignStampScreenAnimationContent = () => {
           position: 'absolute',
           top: 205,
           zIndex: 3,
-          left: '-13%',
+          left: '-30%',
           width: '60%',
         }}
         initial={{ y: '100%', scale: 0 }}
@@ -31,7 +32,7 @@ export const SignStampScreenAnimationContent = () => {
           position: 'absolute',
           top: 95,
           zIndex: 3,
-          right: '-13%',
+          right: '-30%',
           width: '60%',
         }}
         initial={{ y: '100%', scale: 0 }}

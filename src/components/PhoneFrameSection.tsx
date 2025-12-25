@@ -12,6 +12,7 @@ import {
 } from '@/components';
 import styles from '@/App.module.css';
 import { HERO_CONTENT_ANIMATION_DURATION } from '@/shared';
+import { PHONE_FRAME_TRANSLATE_ANIMATION_DURATION } from '@/shared/constants/animationConstants';
 
 export interface PhoneFrameSectionProps {
   activeTab: Tab;
@@ -21,7 +22,7 @@ const PHONE_ANIMATION = {
   initial: { y: '100%' },
   animate: { y: 0 },
   transition: {
-    duration: HERO_CONTENT_ANIMATION_DURATION,
+    duration: PHONE_FRAME_TRANSLATE_ANIMATION_DURATION,
     delay: HERO_CONTENT_ANIMATION_DURATION / 2,
   },
 } as const;

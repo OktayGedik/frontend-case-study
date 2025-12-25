@@ -2,12 +2,11 @@
   position: relative;
 
   overflow: visible;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  width: 330px;
-  height: 430px;
+  /* Responsive width ve height - mobilde küçük, masaüstünde 330x430 */
+  aspect-ratio: 330 / 430;
+  width: clamp(200px, 65vw, 300px);
+  height: auto;
   margin: 0 auto;
 }
 
@@ -30,7 +29,7 @@
 .phoneBodyDark {
   position: absolute;
   z-index: 2;
-  top: 4px;
+  top: 0.9%;
   left: 0;
 
   width: 100%;
@@ -41,27 +40,27 @@
   position: absolute;
   z-index: 5;
   top: 0;
-  right: 61px;
+  right: 18.5%;
 }
 
 .leftAntennaSeparator {
   position: absolute;
   z-index: 5;
-  top: 65px;
+  top: 13%;
   left: 0;
 }
 
 .rightAntennaSeparator {
   position: absolute;
   z-index: 5;
-  top: 65px;
+  top: 13%;
   right: 0;
 }
 
 .phoneFrame {
   position: absolute;
   z-index: 4;
-  top: 4px;
+  top: 0.9%;
   left: 0;
 
   width: 100%;
@@ -71,14 +70,14 @@
 .camera {
   position: absolute;
   z-index: 20;
-  top: 14px;
+  top: 3.2%;
   right: 33%;
 }
 
 .earpieceSpeaker {
   position: absolute;
   z-index: 20;
-  top: 16px;
+  top: 3.7%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -86,9 +85,7 @@
 .screenArea {
   position: absolute;
   z-index: 4;
-  top: 10px;
-  right: 8px;
-  left: 8px;
+  inset: 2.3% 2.4%;
 
   /* overflow: hidden; */
 }

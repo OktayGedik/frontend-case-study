@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import RightArrowImage from '@/shared/assets/images/exportShare/right-arrow.png';
 import PdfImage from '@/shared/assets/images/exportShare/pdf.png';
 import JpgImage from '@/shared/assets/images/exportShare/jpg.png';
@@ -10,42 +10,42 @@ const EXPORT_ITEMS = [
   {
     src: RightArrowImage,
     alt: 'Right Arrow',
-    width: '24px',
-    height: '36px',
-    finalBottom: 20,
-    finalLeft: -35,
-    delay: PHONE_CONTENT_ANIMATION_DELAY + 0.2,
+    width: 'clamp(16px, 5vw, 20px)',
+    height: 'auto',
+    finalBottom: '0%',
+    finalLeft: '-13%',
+    delay: PHONE_CONTENT_ANIMATION_DELAY ,
   },
   {
     src: PdfImage,
     alt: 'PDF Format',
-    width: '111px',
-    height: '132px',
-    finalBottom: 20,
-    finalLeft: 0,
-    delay: PHONE_CONTENT_ANIMATION_DELAY + 0.5,
+    width: 'clamp(60px, 30vw, 110px)',
+    height: 'auto',
+    finalBottom: '0%',
+    finalLeft: '-10%',
+    delay: PHONE_CONTENT_ANIMATION_DELAY + 0.3,
   },
   {
     src: JpgImage,
     alt: 'JPG Format',
-    width: '111px',
-    height: '132px',
-    finalBottom: 40,
-    finalLeft: 100,
-    delay: PHONE_CONTENT_ANIMATION_DELAY + 0.7,
+    width: 'clamp(60px, 30vw, 110px)',
+    height: 'auto',
+    finalBottom: '8%',
+    finalLeft: '28%',
+    delay: PHONE_CONTENT_ANIMATION_DELAY + 0.5,
   },
   {
     src: TxtImage,
     alt: 'TXT Format',
-    width: '111px',
-    height: '132px',
-    finalBottom: 20,
-    finalLeft: 210,
-    delay: PHONE_CONTENT_ANIMATION_DELAY + 0.9,
+    width: 'clamp(60px, 30vw, 110px)',
+    height: 'auto',
+    finalBottom: '0%',
+    finalLeft: '73%',
+    delay: PHONE_CONTENT_ANIMATION_DELAY + 0.7,
   },
 ];
 
-export const ExportScreenAnimationContent = () => {
+export const ExportScreenAnimationContent: FC = () => {
   return (
     <>
       {EXPORT_ITEMS.map((item, index) => (
@@ -63,7 +63,7 @@ export const ExportScreenAnimationContent = () => {
             bottom: 0,
             left: '50%',
             top: 'auto',
-            transform: 'translateX(-50%) translateY(100%)',
+            transform: 'translateX(-50%) translateY(130%)',
           }}
           animate={{
             bottom: item.finalBottom,
