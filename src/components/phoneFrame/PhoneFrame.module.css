@@ -84,8 +84,15 @@
 
 .screenArea {
   position: absolute;
-  z-index: 4;
-  inset: 2.3% 2.4%;
+  inset: 2.3% 2.4% 0;
+}
 
-  /* overflow: hidden; */
+.screenArea img {
+  z-index: 3;
+}
+
+.screenArea div {
+  position: absolute;
+  z-index: 20;
+  inset: 0;
 }

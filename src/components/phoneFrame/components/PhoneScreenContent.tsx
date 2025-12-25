@@ -19,7 +19,7 @@ export const PhoneScreenContent: FC<
         alt="Phone screen content"
         className={styles.phoneFrameBaseImage}
       />
-      {children}
+      <div>{children}</div>
     </>
   );
 };

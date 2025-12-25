@@ -14,7 +14,7 @@ const EXPORT_ITEMS = [
     height: 'auto',
     finalBottom: '0%',
     finalLeft: '-13%',
-    delay: PHONE_CONTENT_ANIMATION_DELAY ,
+    delay: PHONE_CONTENT_ANIMATION_DELAY,
   },
   {
     src: PdfImage,
