@@ -1,12 +1,12 @@
 import { FC, PropsWithChildren } from 'react';
 import styles from './PhoneScreenImageOverlay.module.css';
 
-export interface PhoneScreenContentProps {
+export interface PhoneScreenImageOverlayProps {
   screenImage?: string | undefined;
 }
 
 export const PhoneScreenImageOverlay: FC<
-  PropsWithChildren<PhoneScreenContentProps>
+  PropsWithChildren<PhoneScreenImageOverlayProps>
 > = ({ screenImage, children }) => {
   if (!screenImage) {
     return null;
