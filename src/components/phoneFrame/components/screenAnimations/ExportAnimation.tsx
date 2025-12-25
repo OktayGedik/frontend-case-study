@@ -45,7 +45,7 @@ const EXPORT_ITEMS = [
   },
 ];
 
-export const ExportScreenAnimationContent: FC = () => {
+export const ExportAnimation: FC = () => {
   return (
     <>
       {EXPORT_ITEMS.map((item, index) => (

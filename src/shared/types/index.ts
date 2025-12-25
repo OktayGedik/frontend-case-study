@@ -1,2 +1,3 @@
-export type { Tab, TabContent } from './tab';
-export { TabId } from './tab';
+export type { TabHeroContent } from './tabHeroContent.interface';
+export { TabId } from './tabId.enum';
+export type { Tab } from './tab.interface';

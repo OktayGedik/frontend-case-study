@@ -1,14 +1,14 @@
 import React, { useState, useCallback, useMemo } from 'react';
-import styles from './FeatureTabs.module.css';
+import styles from './Tabs.module.css';
 import { FEATURE_TABS } from '@/shared/constants/featureTabs';
 import { Tab, TabId } from '@/shared/types';
 import { TabButton } from './ui';
 
-export interface FeatureTabsProps {
+export interface TabsProps {
   onTabChange?: (tab: Tab) => void;
 }
 
-export const FeatureTabs: React.FC<FeatureTabsProps> = ({ onTabChange }) => {
+export const Tabs: React.FC<TabsProps> = ({ onTabChange }) => {
   const [activeTabId, setActiveTabId] = useState<TabId>(FEATURE_TABS[0].id);
 
   const handleTabClick = useCallback(

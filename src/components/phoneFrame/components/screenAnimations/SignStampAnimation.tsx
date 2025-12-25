@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import SignImage from '@/shared/assets/images/signStamp/sign.png';
 import StampImage from '@/shared/assets/images/signStamp/stamp.png';
 import { PHONE_CONTENT_ANIMATION_DELAY } from '@/shared';
-export const SignStampScreenAnimationContent: FC = () => {
+export const SignStampAnimation: FC = () => {
   return (
     <>
       <motion.img

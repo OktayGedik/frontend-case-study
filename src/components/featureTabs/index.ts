@@ -1,2 +1,2 @@
-export { FeatureTabs } from './FeatureTabs';
-export type { FeatureTabsProps } from './FeatureTabs';
+export { Tabs } from './Tabs';
+export type { TabsProps } from './Tabs';

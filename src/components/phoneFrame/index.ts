@@ -1,10 +1,10 @@
 export { PhoneFrame } from './PhoneFrame';
 export type { PhoneFrameProps } from './PhoneFrame';
 export {
-  PhoneScreenContent,
-  BatchScanningScreenAnimationContent,
-  SignStampScreenAnimationContent,
-  AdvancedFilterScreenAnimationContent,
-  ExportScreenAnimationContent,
+  PhoneScreenImageOverlay,
+  BatchScanningAnimation,
+  SignStampAnimation,
+  AdvancedFilterAnimation,
+  ExportAnimation,
 } from './components';
 export type { PhoneScreenContentProps } from './components';

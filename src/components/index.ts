@@ -1,14 +1,12 @@
-export { FeatureTabs } from './featureTabs';
+export { Tabs } from './featureTabs';
 export {
   PhoneFrame,
-  PhoneScreenContent,
-  BatchScanningScreenAnimationContent,
-  SignStampScreenAnimationContent,
-  AdvancedFilterScreenAnimationContent,
-  ExportScreenAnimationContent,
+  PhoneScreenImageOverlay,
+  BatchScanningAnimation,
+  SignStampAnimation,
+  AdvancedFilterAnimation,
+  ExportAnimation,
 } from './phoneFrame';
-export { FeatureHeroContent } from './featureHeroContent';
+export { HeroContent } from './heroContent';
 export { PhoneFrameSection } from './PhoneFrameSection';
 export type { PhoneFrameSectionProps } from './PhoneFrameSection';
-export { HeroSection } from './HeroSection';
-export type { HeroSectionProps } from './HeroSection';

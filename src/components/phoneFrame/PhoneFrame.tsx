@@ -2,14 +2,14 @@ import { FC, PropsWithChildren } from 'react';
 import styles from './PhoneFrame.module.css';
 
 // SVG imports using SVGR
-import FrameSvg from './assets/frame.svg?react';
-import PhoneFrameBodyDarkSvg from './assets/phone-frame-body-dark.svg?react';
-import PhoneFrameEdgeHighlightBlueSvg from './assets/phone-frame-edge-highlight-blue.svg?react';
-import CameraSvg from './assets/camera.svg?react';
-import EarpieceSpeakerSvg from './assets/earpiece-speaker.svg?react';
-import TopAntennaSeparatorSvg from './assets/top-antenna-separator.svg?react';
-import LeftAntennaSeparatorSvg from './assets/left-antenna-separator.svg?react';
-import RightAntennaSeparatorSvg from './assets/right-antenna-separator.svg?react';
+import FrameSvg from '@/shared/assets/images/phoneFrame/frame.svg?react';
+import PhoneFrameBodyDarkSvg from '@/shared/assets/images/phoneFrame/phone-frame-body-dark.svg?react';
+import PhoneFrameEdgeHighlightBlueSvg from '@/shared/assets/images/phoneFrame/phone-frame-edge-highlight-blue.svg?react';
+import CameraSvg from '@/shared/assets/images/phoneFrame/camera.svg?react';
+import EarpieceSpeakerSvg from '@/shared/assets/images/phoneFrame/earpiece-speaker.svg?react';
+import TopAntennaSeparatorSvg from '@/shared/assets/images/phoneFrame/top-antenna-separator.svg?react';
+import LeftAntennaSeparatorSvg from '@/shared/assets/images/phoneFrame/left-antenna-separator.svg?react';
+import RightAntennaSeparatorSvg from '@/shared/assets/images/phoneFrame/right-antenna-separator.svg?react';
 
 export interface PhoneFrameProps {
   showContent?: boolean;

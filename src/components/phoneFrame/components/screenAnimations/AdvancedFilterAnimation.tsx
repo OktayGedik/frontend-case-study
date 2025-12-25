@@ -4,7 +4,7 @@ import { PHONE_CONTENT_ANIMATION_DELAY } from '@/shared';
 import BrightnessProgressBarImage from '@/shared/assets/images/advancedFilters/brightness-progress-bar.png';
 import ContrastProgressBarImage from '@/shared/assets/images/advancedFilters/contrast-progress-bar.png';
 
-export const AdvancedFilterScreenAnimationContent: FC = () => {
+export const AdvancedFilterAnimation: FC = () => {
   return (
     <>
       <motion.img

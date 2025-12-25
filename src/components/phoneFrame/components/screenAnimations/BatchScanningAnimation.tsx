@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { BATCH_SCANNING_FILES } from '@/shared/constants/batchScanningFiles';
 import { PHONE_CONTENT_ANIMATION_DELAY } from '@/shared/constants/animationConstants';
 
-export const BatchScanningScreenAnimationContent: FC = () => {
+export const BatchScanningAnimation: FC = () => {
   return (
     <>
       {BATCH_SCANNING_FILES.map((file, index) => (
