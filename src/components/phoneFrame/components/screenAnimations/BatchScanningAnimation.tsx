@@ -16,7 +16,7 @@ export const BatchScanningAnimation: FC = () => {
             top: `${21 + index * 3}%`,
             zIndex: index + 1,
             left: `calc(5% + ${(BATCH_SCANNING_FILES.length - 1 - index) * 12}px)`,
-            width: `${70 + index * 10}%`,
+            width: `${90 - (BATCH_SCANNING_FILES.length - 1 - index) * 10}%`,
           }}
           initial={{ y: '120%', scale: 1.2 }}
           animate={{ y: 0, scale: 1 }}
