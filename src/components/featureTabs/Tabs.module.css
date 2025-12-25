@@ -1,6 +1,7 @@
 .tabsContainer {
   scroll-behavior: smooth;
   scrollbar-width: none;
+  scroll-snap-type: x mandatory;
 
   z-index: 20;
 

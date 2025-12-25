@@ -1,5 +1,6 @@
 .tabButton {
   cursor: pointer;
+  scroll-snap-align: center;
 
   position: relative;
 
