@@ -19,7 +19,7 @@ export const PhoneScreenImageOverlay: FC<
         alt="Phone screen content"
         className={styles.phoneFrameBaseImage}
       />
-      <div>{children}</div>
+      {children && <div>{children}</div>}
     </>
   );
 };
