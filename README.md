@@ -194,10 +194,6 @@ npm run format:prettier  # Prettier only
 npm run format:stylelint # Stylelint only
 ```
 
-## 🎨 Design References
-
-- **Figma Design**: [Frontend Case (HubX)](<https://www.figma.com/file/fqq3IGqxAiIUEItAWHZ54W/Frontend-Case-(HubX)?type=design&node-id=896%3A263&mode=design&t=7TvYeaXudwa3TGy5-1>)
-- **Implementation Videos**: [Google Drive](https://drive.google.com/drive/folders/1kkicvHG7UMc-MY9npv_fy4gW1cZF3QiO?usp=drive_link)
 
 ## 💡 Implementation Overview
 
