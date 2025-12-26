@@ -41,37 +41,74 @@ This project is a frontend application developed based on the Figma design provi
 ```
 src/
 ├── components/                    # React components
-│   ├── PhoneFrameSection.tsx     # Phone frame and animations
+│   ├── index.ts
+│   ├── PhoneFrameSection.tsx     # Phone frame and animations section
 │   ├── featureTabs/              # Feature tab interface
-│   │   └── Tabs.tsx
+│   │   ├── index.ts
+│   │   ├── Tabs.tsx             # Main tabs component
+│   │   ├── Tabs.module.css       # Tabs styles
+│   │   └── ui/                   # UI sub-components
+│   │       ├── index.ts
+│   │       └── tabButton/        # Tab button component
+│   │           ├── index.ts
+│   │           ├── TabButton.tsx
+│   │           └── TabButton.module.css
 │   ├── heroContent/              # Main heading and description
-│   │   └── HeroContent.tsx
+│   │   ├── index.ts
+│   │   ├── HeroContent.tsx
+│   │   └── HeroContent.module.css
 │   └── phoneFrame/               # Phone frame component
+│       ├── index.ts
 │       ├── PhoneFrame.tsx
-│       └── components/
+│       ├── PhoneFrame.module.css
+│       └── components/           # Phone frame sub-components
+│           ├── index.ts
 │           ├── phoneScreenImageOverlay/
+│           │   ├── index.ts
+│           │   ├── PhoneScreenImageOverlay.tsx
+│           │   └── PhoneScreenImageOverlay.module.css
 │           └── screenAnimations/  # Tab-specific animations
+│               ├── index.ts
 │               ├── AdvancedFilterAnimation.tsx
 │               ├── BatchScanningAnimation.tsx
 │               ├── ExportAnimation.tsx
 │               └── SignStampAnimation.tsx
 │
 ├── shared/                        # Shared resources
+│   ├── index.ts
 │   ├── assets/                   # Images and icon files
-│   │   ├── icons/
-│   │   └── images/
+│   │   ├── icons/                # Icon assets
+│   │   │   └── featureTabs/     # Feature tab icons
+│   │   │       ├── advanced-filters.svg
+│   │   │       ├── batch-scanning.svg
+│   │   │       ├── document-scanner.svg
+│   │   │       ├── export-share.svg
+│   │   │       └── sign-stamp.svg
+│   │   └── images/               # Image assets
+│   │       ├── advancedFilters/  # Advanced filters feature images
+│   │       ├── batchScanning/    # Batch scanning feature images
+│   │       ├── documentScanner/  # Document scanner feature images
+│   │       ├── exportShare/      # Export & share feature images
+│   │       ├── phoneFrame/       # Phone frame SVG images
+│   │       └── signStamp/        # Sign & stamp feature images
 │   ├── constants/                # Constants and configurations
-│   │   ├── featureTabs.ts       # Tab data
-│   │   ├── animationConstants.ts # Animation durations
-│   │   └── batchScanningFiles.ts
-│   └── types/                    # TypeScript types
-│       ├── tab.interface.ts
-│       ├── tabId.enum.ts
-│       └── tabHeroContent.interface.ts
+│   │   ├── index.ts
+│   │   ├── featureTabs.ts       # Tab data and configuration
+│   │   ├── animationConstants.ts # Animation durations and timings
+│   │   └── batchScanningFiles.ts # Batch scanning file data
+│   └── types/                    # TypeScript types and interfaces
+│       ├── index.ts
+│       ├── tab.interface.ts      # Tab interface definition
+│       ├── tabId.enum.ts         # Tab ID enumeration
+│       └── tabHeroContent.interface.ts # Hero content interface
+│
+├── types/                         # Global type definitions
+│   └── svg.d.ts                  # SVG module declarations
 │
 ├── App.tsx                        # Main application component
 ├── App.module.css                 # Application styles
-└── main.tsx                       # Entry point
+├── styles.css                     # Global styles
+└── main.tsx                       # Application entry point
 ```
 
 ## 🛠️ Development Environment Setup
