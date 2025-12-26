@@ -1,10 +1,11 @@
 import { TabHeroContent, TabId } from '@/shared';
-import React from 'react';
+import { ComponentType, SVGProps } from 'react';
 
 export interface Tab {
   id: TabId;
   label: string;
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  icon: ComponentType<SVGProps<SVGSVGElement>>;
   content: TabHeroContent;
-  screenContentBaseImage?: string;
+  screenContentBaseImage: string;
+  animationComponent?: ComponentType;
 }

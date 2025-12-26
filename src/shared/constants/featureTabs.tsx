@@ -10,6 +10,12 @@ import BatchScanningImage from '../assets/images/batchScanning/batch-scanning-ba
 import AdvancedFiltersImage from '../assets/images/advancedFilters/advanced-filters-base.png';
 import ExportShareImage from '../assets/images/exportShare/export-share-base.png';
 import SignStampBaseImage from '../assets/images/signStamp/sign-stamp-base.png';
+import {
+  AdvancedFilterAnimation,
+  BatchScanningAnimation,
+  ExportAnimation,
+  SignStampAnimation,
+} from '@/components';
 export const FEATURE_TABS = [
   {
     id: TabId.DocumentScanner,
@@ -29,6 +35,7 @@ export const FEATURE_TABS = [
     label: 'Sign & Stamp',
     icon: SignStampIcon,
     screenContentBaseImage: SignStampBaseImage,
+    animationComponent: SignStampAnimation,
     content: {
       title: 'Sign & Stamp',
       subTitle: 'One-Tap Focus',
@@ -42,6 +49,7 @@ export const FEATURE_TABS = [
     label: 'Batch Scanning',
     icon: BatchScanningIcon,
     screenContentBaseImage: BatchScanningImage,
+    animationComponent: BatchScanningAnimation,
     content: {
       title: 'Batch Scanning',
       subTitle: 'Multiple Page Scan',
@@ -55,6 +63,7 @@ export const FEATURE_TABS = [
     label: 'Advanced Filters',
     icon: AdvancedFiltersIcon,
     screenContentBaseImage: AdvancedFiltersImage,
+    animationComponent: AdvancedFilterAnimation,
     content: {
       title: 'Advanced Filters',
       subTitle: 'Unique Filters',
@@ -68,6 +77,7 @@ export const FEATURE_TABS = [
     label: 'Export & Share',
     icon: ExportShareIcon,
     screenContentBaseImage: ExportShareImage,
+    animationComponent: ExportAnimation,
     content: {
       title: 'Export & Share',
       subTitle: 'All-Round Conversion',

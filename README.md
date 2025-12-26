@@ -93,7 +93,7 @@ src/
 │   │       └── signStamp/        # Sign & stamp feature images
 │   ├── constants/                # Constants and configurations
 │   │   ├── index.ts
-│   │   ├── featureTabs.ts       # Tab data and configuration
+│   │   ├── featureTabs.tsx       # Tab data and configuration
 │   │   ├── animationConstants.ts # Animation durations and timings
 │   │   └── batchScanningFiles.ts # Batch scanning file data
 │   └── types/                    # TypeScript types and interfaces
@@ -193,7 +193,6 @@ Formats all code using Prettier and Stylelint.
 npm run format:prettier  # Prettier only
 npm run format:stylelint # Stylelint only
 ```
-
 
 ## 💡 Implementation Overview
 

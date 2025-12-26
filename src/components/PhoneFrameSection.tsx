@@ -1,15 +1,7 @@
 import { FC } from 'react';
 import { motion } from 'framer-motion';
 import type { Tab } from '@/shared/types';
-import { TabId } from '@/shared/types';
-import {
-  BatchScanningAnimation,
-  SignStampAnimation,
-  PhoneFrame,
-  PhoneScreenImageOverlay,
-  AdvancedFilterAnimation,
-  ExportAnimation,
-} from '@/components';
+import { PhoneFrame, PhoneScreenImageOverlay } from '@/components';
 import styles from '@/App.module.css';
 import { HERO_CONTENT_ANIMATION_DURATION } from '@/shared';
 import { PHONE_FRAME_TRANSLATE_ANIMATION_DURATION } from '@/shared/constants/animationConstants';
@@ -27,19 +19,10 @@ const PHONE_TRANSLATE_ANIMATION = {
   },
 } as const;
 
-const PHONE_ANIMATION_CONTENT_COMPONENTS = {
-  [TabId.DocumentScanner]: null,
-  [TabId.SignStamp]: SignStampAnimation,
-  [TabId.BatchScanning]: BatchScanningAnimation,
-  [TabId.AdvancedFilters]: AdvancedFilterAnimation,
-  [TabId.ExportShare]: ExportAnimation,
-} as const;
-
 export const PhoneFrameSection: FC<PhoneFrameSectionProps> = ({
   activeTab,
 }) => {
-  const AnimationContentComponent =
-    PHONE_ANIMATION_CONTENT_COMPONENTS[activeTab.id];
+  const AnimationContentComponent = activeTab.animationComponent;
 
   return (
     <motion.div
