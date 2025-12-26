@@ -36,6 +36,7 @@
   line-height: var(--lh-32);
   color: var(--color-text-body);
   text-align: center;
+  letter-spacing: var(--ls-1);
 }
 
 .button {
@@ -54,10 +55,12 @@
   .wrapper {
     flex: 1;
     align-items: flex-end;
+    padding-right: var(--space-9);
   }
 
   .description {
     min-height: unset;
+    font-size: var(--fs-20);
     text-align: right;
   }
 }
